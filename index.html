@@ -320,21 +320,21 @@
         <section class="py-10 bg-slate-800/50">
             <div class="container mx-auto px-6 text-center">
                 <h2 class="text-2xl font-bold text-white text-center mb-8">Product Specifications</h2>
-                   <div class="flex flex-col md:flex-row justify-center gap-8 md:gap-16">
-                        <a href="https://microdos2.github.io/Metocin-INFO/" target="_blank" rel="noopener noreferrer" class="hover:opacity-80 transition-opacity">
+                       <div class="flex flex-col md:flex-row justify-center gap-8 md:gap-16">
+                            <a href="https://microdos2.github.io/Metocin-INFO/" target="_blank" rel="noopener noreferrer" class="hover:opacity-80 transition-opacity">
+                                <div>
+                                    <p class="text-slate-400 font-semibold uppercase tracking-wider text-sm">Active Compound</p>
+                                    <p class="text-lg font-bold text-white">2mg Metocin (4-HO-MET)</p>
+                                </div>
+                            </a>
                             <div>
-                                <p class="text-slate-400 font-semibold uppercase tracking-wider text-sm">Active Compound</p>
-                                <p class="text-lg font-bold text-white">2mg Metocin (4-HO-MET)</p>
+                                <p class="text-slate-400 font-semibold uppercase tracking-wider text-sm">Form</p>
+                                <p class="text-lg font-bold text-white">Scored, Non-Chewable Pill</p>
                             </div>
-                        </a>
-                        <div>
-                            <p class="text-slate-400 font-semibold uppercase tracking-wider text-sm">Form</p>
-                            <p class="text-lg font-bold text-white">Scored, Non-Chewable Pill</p>
-                        </div>
-                         <div>
-                            <p class="text-slate-400 font-semibold uppercase tracking-wider text-sm">Shipping</p>
-                            <p class="text-lg font-bold text-white">Discreet, within 48 hours</p>
-                        </div>
+                             <div>
+                                <p class="text-slate-400 font-semibold uppercase tracking-wider text-sm">Shipping</p>
+                                <p class="text-lg font-bold text-white">Discreet, within 48 hours</p>
+                            </div>
                 </div>
             </div>
         </section>
@@ -740,7 +740,7 @@
                         <ul class="space-y-2 text-slate-400">
                             <li><a href="https://docs.google.com/document/d/16Z3l0xx-bDygSb5rDf_1lXAVMqxcc2jCumqv39KdLAA/edit?tab=t.0#heading=h.bfvm02idmv3h" target="_blank" rel="noopener noreferrer" class="hover:text-white">Privacy Policy</a></li>
                             <li><a href="https://docs.google.com/document/d/16Z3l0xx-bDygSb5rDf_1lXAVMqxcc2jCumqv39KdLAA/edit?tab=t.0#heading=h.bfvm02idmv3h" target="_blank" rel="noopener noreferrer" class="hover:text-white">Terms of Service</a></li>
-                            <li><a href="https://microdos2.github.io/Joes-Story/" target="_blank" rel="noopener noreferrer" class="hover:text-white">User Experiences</a></li>
+                            <li><a href="https://microdos2.github.io/usersstories/" target="_blank" rel="noopener noreferrer" class="hover:text-white">User Experiences</a></li>
                             <li><a href="https://microdos2.github.io/Metocin-INFO/" target="_blank" rel="noopener noreferrer" class="hover:text-white">Metocin (4-HO-MET)</a></li>
                         </ul>
                     </div>
@@ -765,136 +765,136 @@
          */
         function initVideoRotator() {
              const videoData = [
-                {
-                    videoId: 'tVmKLPFWsP4',
-                    title: 'One Pill. One Dose. <span class="gradient-text">Pure Clarity.</span>',
-                    subtitle: 'Legal, fast-acting psychedelic exploration. Our precisely formulated 2mg Metocin tablets are designed for cognitive clarity, perceptual enhancement, and creative flow.'
-                },
-                {
-                    videoId: '7IPRnhIub8I',
-                    title: 'Unlock Creative Flow. <span class="gradient-text">Elevate Your Senses.</span>',
-                    subtitle: 'Tap into a higher state of focus and inspiration. See your world from a new, enhanced perspective.'
-                },
-                {
-                    videoId: 'nXwnb-ej8J0',
-                    title: 'Expand Your Mind. <span class="gradient-text">Discover New Worlds.</span>',
-                    subtitle: 'Journey through vibrant landscapes of thought and creativity with our precision-formulated microdoses.'
-                },
-                {
-                    videoId: 'HCzVzK66Nwc',
-                    title: 'A New Perspective. <span class="gradient-text">Simplified.</span>',
-                    subtitle: 'Experience the world with heightened senses and a clearer, more connected mind.'
-                }
-            ];
+                 {
+                     videoId: 'tVmKLPFWsP4',
+                     title: 'One Pill. One Dose. <span class="gradient-text">Pure Clarity.</span>',
+                     subtitle: 'Legal, fast-acting psychedelic exploration. Our precisely formulated 2mg Metocin tablets are designed for cognitive clarity, perceptual enhancement, and creative flow.'
+                 },
+                 {
+                     videoId: '7IPRnhIub8I',
+                     title: 'Unlock Creative Flow. <span class="gradient-text">Elevate Your Senses.</span>',
+                     subtitle: 'Tap into a higher state of focus and inspiration. See your world from a new, enhanced perspective.'
+                 },
+                 {
+                     videoId: 'nXwnb-ej8J0',
+                     title: 'Expand Your Mind. <span class="gradient-text">Discover New Worlds.</span>',
+                     subtitle: 'Journey through vibrant landscapes of thought and creativity with our precision-formulated microdoses.'
+                 },
+                 {
+                     videoId: 'HCzVzK66Nwc',
+                     title: 'A New Perspective. <span class="gradient-text">Simplified.</span>',
+                     subtitle: 'Experience the world with heightened senses and a clearer, more connected mind.'
+                 }
+             ];
 
-            let currentVideoIndex = 0;
-            let videoInterval;
+             let currentVideoIndex = 0;
+             let videoInterval;
 
-            const videoContainer = document.getElementById('video-container');
-            const heroTitle = document.getElementById('hero-title');
-            const heroSubtitle = document.getElementById('hero-subtitle');
-            const dotsContainer = document.getElementById('video-dots');
+             const videoContainer = document.getElementById('video-container');
+             const heroTitle = document.getElementById('hero-title');
+             const heroSubtitle = document.getElementById('hero-subtitle');
+             const dotsContainer = document.getElementById('video-dots');
 
-            if (!videoContainer || !heroTitle || !heroSubtitle || !dotsContainer) return;
+             if (!videoContainer || !heroTitle || !heroSubtitle || !dotsContainer) return;
 
-            // Pre-create iframe elements for smoother transitions
-            videoData.forEach((data, index) => {
-                const iframe = document.createElement('iframe');
-                const videoSrc = `https://www.youtube.com/embed/${data.videoId}?autoplay=1&mute=1&loop=1&playlist=${data.videoId}&controls=0&showinfo=0&rel=0&modestbranding=1&enablejsapi=1`;
-                iframe.src = videoSrc;
-                iframe.className = 'video-iframe';
-                iframe.setAttribute('frameborder', '0');
-                iframe.setAttribute('allow', 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture');
-                iframe.style.opacity = index === 0 ? '1' : '0';
-                videoContainer.appendChild(iframe);
-                data.element = iframe; // Store element reference
-            });
+             // Pre-create iframe elements for smoother transitions
+             videoData.forEach((data, index) => {
+                 const iframe = document.createElement('iframe');
+                 const videoSrc = `https://www.youtube.com/embed/${data.videoId}?autoplay=1&mute=1&loop=1&playlist=${data.videoId}&controls=0&showinfo=0&rel=0&modestbranding=1&enablejsapi=1`;
+                 iframe.src = videoSrc;
+                 iframe.className = 'video-iframe';
+                 iframe.setAttribute('frameborder', '0');
+                 iframe.setAttribute('allow', 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture');
+                 iframe.style.opacity = index === 0 ? '1' : '0';
+                 videoContainer.appendChild(iframe);
+                 data.element = iframe; // Store element reference
+             });
             
-            function showVideo(index) {
-                // Fade out text
-                heroTitle.style.opacity = 0;
-                heroSubtitle.style.opacity = 0;
+             function showVideo(index) {
+                 // Fade out text
+                 heroTitle.style.opacity = 0;
+                 heroSubtitle.style.opacity = 0;
 
-                setTimeout(() => {
-                    const videoInfo = videoData[index];
-                    heroTitle.innerHTML = videoInfo.title;
-                    heroSubtitle.textContent = videoInfo.subtitle;
+                 setTimeout(() => {
+                     const videoInfo = videoData[index];
+                     heroTitle.innerHTML = videoInfo.title;
+                     heroSubtitle.textContent = videoInfo.subtitle;
                     
-                    // Fade in text
-                    heroTitle.style.opacity = 1;
-                    heroSubtitle.style.opacity = 1;
+                     // Fade in text
+                     heroTitle.style.opacity = 1;
+                     heroSubtitle.style.opacity = 1;
 
-                    videoData.forEach((v, i) => {
-                        v.element.style.opacity = i === index ? '1' : '0';
-                    });
+                     videoData.forEach((v, i) => {
+                         v.element.style.opacity = i === index ? '1' : '0';
+                     });
 
-                    document.querySelectorAll('.video-dot').forEach((dot, i) => {
-                        dot.classList.toggle('active', i === index);
-                    });
-                    currentVideoIndex = index;
-                }, 500);
-            }
+                     document.querySelectorAll('.video-dot').forEach((dot, i) => {
+                         dot.classList.toggle('active', i === index);
+                     });
+                     currentVideoIndex = index;
+                 }, 500);
+             }
 
-            function createDots() {
-                videoData.forEach((_, index) => {
-                    const dot = document.createElement('button'); // Use button for accessibility
-                    dot.classList.add('video-dot');
-                    dot.setAttribute('aria-label', `Play video ${index + 1}`);
-                    dot.addEventListener('click', () => {
-                        showVideo(index);
-                        resetInterval();
-                    });
-                    dotsContainer.appendChild(dot);
-                });
-            }
+             function createDots() {
+                 videoData.forEach((_, index) => {
+                     const dot = document.createElement('button'); // Use button for accessibility
+                     dot.classList.add('video-dot');
+                     dot.setAttribute('aria-label', `Play video ${index + 1}`);
+                     dot.addEventListener('click', () => {
+                         showVideo(index);
+                         resetInterval();
+                     });
+                     dotsContainer.appendChild(dot);
+                 });
+             }
             
-            function startInterval() {
-                videoInterval = setInterval(() => {
-                    const nextIndex = (currentVideoIndex + 1) % videoData.length;
-                    showVideo(nextIndex);
-                }, 7000);
-            }
+             function startInterval() {
+                 videoInterval = setInterval(() => {
+                     const nextIndex = (currentVideoIndex + 1) % videoData.length;
+                     showVideo(nextIndex);
+                 }, 7000);
+             }
 
-            function resetInterval() {
-                clearInterval(videoInterval);
-                startInterval();
-            }
+             function resetInterval() {
+                 clearInterval(videoInterval);
+                 startInterval();
+             }
 
-            createDots();
-            showVideo(0);
-            startInterval();
+             createDots();
+             showVideo(0);
+             startInterval();
         }
 
         /**
          * Initializes the testimonial carousel.
          */
         function initTestimonialCarousel() {
-            const testimonials = [
-                { name: 'Alex P.', text: '"Absolutely game-changing for my creative workflow. The focus is clean and consistent without any jitters. Highly recommend."' },
-                { name: 'Sarah K.', text: '"I was skeptical, but the trial sold me. It\'s exactly as described - a subtle lift that helps me stay present and productive all day."' },
-                { name: 'Mike D.', text: '"The subscription is so convenient, and the product is top-notch. Discreet shipping is a huge plus. My productivity has never been better."' },
-                { name: 'Jess R.', text: '"A perfect tool for deep work sessions. It helps me get into a flow state much faster than coffee ever could."' },
-                { name: 'Tom B.', text: '"The clarity is unreal. It\'s not a high, just a better version of my normal self. This is the future."' },
-                { name: 'Emily C.', text: '"As an artist, this has been invaluable for breaking through creative blocks. Everything just feels more vibrant and connected."' }
-            ];
+             const testimonials = [
+                 { name: 'Alex P.', text: '"Absolutely game-changing for my creative workflow. The focus is clean and consistent without any jitters. Highly recommend."' },
+                 { name: 'Sarah K.', text: '"I was skeptical, but the trial sold me. It\'s exactly as described - a subtle lift that helps me stay present and productive all day."' },
+                 { name: 'Mike D.', text: '"The subscription is so convenient, and the product is top-notch. Discreet shipping is a huge plus. My productivity has never been better."' },
+                 { name: 'Jess R.', text: '"A perfect tool for deep work sessions. It helps me get into a flow state much faster than coffee ever could."' },
+                 { name: 'Tom B.', text: '"The clarity is unreal. It\'s not a high, just a better version of my normal self. This is the future."' },
+                 { name: 'Emily C.', text: '"As an artist, this has been invaluable for breaking through creative blocks. Everything just feels more vibrant and connected."' }
+             ];
 
-            const carousel = document.getElementById('testimonial-carousel');
-            if (!carousel) return;
+             const carousel = document.getElementById('testimonial-carousel');
+             if (!carousel) return;
             
-            const carouselContent = carousel.cloneNode(true);
-            carousel.appendChild(carouselContent);
+             const carouselContent = carousel.cloneNode(true);
+             carousel.appendChild(carouselContent);
             
-            // This is a simple CSS-driven animation now
-            carousel.style.animation = `scroll 40s linear infinite`;
+             // This is a simple CSS-driven animation now
+             carousel.style.animation = `scroll 40s linear infinite`;
             
-            const style = document.createElement('style');
-            style.innerHTML = `
-                @keyframes scroll {
-                    0% { transform: translateX(0); }
-                    100% { transform: translateX(-50%); }
-                }
-            `;
-            document.head.appendChild(style);
+             const style = document.createElement('style');
+             style.innerHTML = `
+                 @keyframes scroll {
+                     0% { transform: translateX(0); }
+                     100% { transform: translateX(-50%); }
+                 }
+             `;
+             document.head.appendChild(style);
         }
 
         /**

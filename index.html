@@ -361,7 +361,8 @@
                 <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 max-w-7xl mx-auto items-start">
                     
                     <!-- Trial Pack Card -->
-                    <div class="pricing-card card-bg rounded-xl p-8 border border-slate-800 flex flex-col shadow-lg h-full">
+                    <div class="pricing-card card-bg rounded-xl p-8 border border-slate-800 flex flex-col shadow-lg h-full relative">
+                        <div class="absolute top-0 right-0 py-1.5 px-4 bg-sky-400 text-white text-xs font-bold rounded-bl-lg">GREAT VALUE</div>
                         <h3 class="text-2xl font-bold text-white mb-2">Trial Pack</h3>
                         <p class="text-slate-400 mb-4">A low-risk introduction.</p>
                         <a href="https://microdos2.github.io/usersstories/#" target="_blank" rel="noopener noreferrer" class="w-full text-center btn-secondary text-white font-semibold px-6 py-3 rounded-lg mb-4">Read Stories</a>
@@ -381,6 +382,10 @@
                         <h3 class="text-2xl font-bold text-white mb-2">One-Time Purchase</h3>
                         <p class="text-slate-400 mb-6 flex-grow">No commitment. Pay as you go.</p>
                         <div class="space-y-4 my-auto">
+                            <a href="#checkout" data-plan="onetime_3" class="purchase-btn block bg-slate-700/50 p-4 rounded-lg hover:bg-slate-700 transition-colors">
+                                <p class="font-bold text-white">3 Pills</p>
+                                <p><span class="text-2xl font-bold text-white">$19.95</span> <span class="text-slate-400 text-sm">($6.65/pill)</span></p>
+                            </a>
                             <a href="#checkout" data-plan="onetime_10" class="purchase-btn block bg-slate-700/50 p-4 rounded-lg hover:bg-slate-700 transition-colors">
                                 <p class="font-bold text-white">10 Pills</p>
                                 <p><span class="text-2xl font-bold text-white">$57.50</span> <span class="text-slate-400 text-sm">($5.75/pill)</span></p>
@@ -392,10 +397,6 @@
                             <a href="#checkout" data-plan="onetime_30" class="purchase-btn block bg-slate-700/50 p-4 rounded-lg hover:bg-slate-700 transition-colors">
                                 <p class="font-bold text-white">30 Pills</p>
                                 <p><span class="text-2xl font-bold text-white">$157.50</span> <span class="text-slate-400 text-sm">($5.25/pill)</span></p>
-                            </a>
-                            <a href="#checkout" data-plan="onetime_90" class="purchase-btn block bg-slate-700/50 p-4 rounded-lg hover:bg-slate-700 transition-colors">
-                                <p class="font-bold text-white">90 Pills</p>
-                                <p><span class="text-2xl font-bold text-white">$427.50</span> <span class="text-slate-400 text-sm">($4.75/pill)</span></p>
                             </a>
                         </div>
                     </div>
@@ -895,10 +896,10 @@
 
             const plans = {
                 trial: { name: 'Trial Pack', price: 14.95, recurring: false, pills: 3, image: 'https://placehold.co/100x100/1e293b/7dd3fc?text=3' },
+                onetime_3: { name: 'One-Time Purchase (3 Pills)', price: 19.95, recurring: false, pills: 3, image: 'https://placehold.co/100x100/1e293b/7dd3fc?text=3' },
                 onetime_10: { name: 'One-Time Purchase (10 Pills)', price: 57.50, recurring: false, pills: 10, image: 'https://placehold.co/100x100/1e293b/7dd3fc?text=10' },
                 onetime_15: { name: 'One-Time Purchase (15 Pills)', price: 82.50, recurring: false, pills: 15, image: 'https://placehold.co/100x100/1e293b/7dd3fc?text=15' },
                 onetime_30: { name: 'One-Time Purchase (30 Pills)', price: 157.50, recurring: false, pills: 30, image: 'https://placehold.co/100x100/1e293b/7dd3fc?text=30' },
-                onetime_90: { name: 'One-Time Purchase (90 Pills)', price: 427.50, recurring: false, pills: 90, image: 'https://placehold.co/100x100/1e293b/7dd3fc?text=90' },
                 sub_10_monthly: { name: '10 Pill Monthly Subscription', price: 51.75, recurring: true, pills: 10, image: 'https://placehold.co/100x100/1e293b/38bdf8?text=10' },
                 sub_15_monthly: { name: '15 Pill Monthly Subscription', price: 74.25, recurring: true, pills: 15, image: 'https://placehold.co/100x100/1e293b/38bdf8?text=15' },
                 sub_30_monthly: { name: '30 Pill Monthly Subscription', price: 141.75, recurring: true, pills: 30, image: 'https://placehold.co/100x100/1e293b/38bdf8?text=30' }
